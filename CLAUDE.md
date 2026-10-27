@@ -31,3 +31,20 @@ Do not inline rules back into this file and do not use `@import` for either file
 they are intentionally referenced, not imported.
 
 graphify scan root: `src/` — rebuild with `/graphify src --directed`.
+
+## Code Analysis
+
+Run changed-file analysis after implementation:
+
+```powershell
+cmd /c '.\tools\analyze_changed_and_new_files.bat'
+```
+
+For a whole-project audit, run:
+
+```powershell
+cmd /c '.\tools\analyze_code.bat'
+```
+
+Reports are written to `code_analysis_results/`. The changed-file script checks new and modified
+files against Git `HEAD`; configured project-wide checks may still inspect the whole project.
