@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Screenshot connector sample</title>
+    <style>
+      body { font: 18px/1.5 system-ui, sans-serif; margin: 3rem auto; max-width: 48rem; padding: 0 1rem; }
+      section { min-height: 80vh; padding-top: 2rem; }
+      input, button { font: inherit; margin: .5rem 0; padding: .4rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Screenshot connector sample</h1>
+    <p>This page works normally when it is opened without a demo request.</p>
+    <form id="sample-form">
+      <label for="visitor-name">Your name</label><br>
+      <input id="visitor-name" autocomplete="off">
+      <button id="show-result" type="submit">Show greeting</button>
+    </form>
+    <p id="greeting" hidden></p>
+    <section id="details">
+      <h2>More information</h2>
+      <p>The demo scrolls here before moving to the next page.</p>
+      <a id="continue" href="second.html">Continue to the second page</a>
+    </section>
+    <script>
+      document.querySelector("#sample-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.querySelector("#visitor-name").value;
+        const greeting = document.querySelector("#greeting");
+        greeting.textContent = `Hello, ${name}!`;
+        greeting.hidden = false;
+      });
+    </script>
+    <script src="../dist/automated-screenshot-web-connector.js"></script>
+    <script src="./demos.js"></script>
+  </body>
+</html>

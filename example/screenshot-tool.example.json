@@ -1,0 +1,12 @@
+{
+  "web": {
+    "base_url": "http://127.0.0.1:8080/example",
+    "viewport": { "width": 1024, "height": 700 },
+    "channel": "msedge",
+    "headless": true,
+    "demos": [
+      { "id": 1, "name": "sample-tour", "path": "/index.html", "formats": ["gif", "mp4"] },
+      { "id": 2, "name": "in-page", "path": "/index.html", "formats": ["png"] }
+    ]
+  }
+}
