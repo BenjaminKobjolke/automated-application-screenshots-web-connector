@@ -30,4 +30,4 @@ for that run; without such an instruction, `CODING_RULES.md` stays binding in fu
 Do not inline rules back into this file and do not use `@import` for either file —
 they are intentionally referenced, not imported.
 
-graphify scan root: `automated_screenshot_web_connector/` — rebuild with `/graphify automated_screenshot_web_connector --directed`.
+graphify scan root: `src/` — rebuild with `/graphify src --directed`.

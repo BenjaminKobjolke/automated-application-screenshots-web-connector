@@ -22,7 +22,7 @@ REM         answers a query. This is the "does graphify actually work here" chec
 REM ===========================================================================
 
 REM ---- adjust this to your project's code folder -------------------------------
-set "CODE_DIR=automated_screenshot_web_connector"
+set "CODE_DIR=src"
 REM -----------------------------------------------------------------------------
 
 REM This bat lives in tools\ ; run everything from the repo root so graphify
