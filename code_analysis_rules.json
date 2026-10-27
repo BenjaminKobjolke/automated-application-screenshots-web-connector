@@ -1,0 +1,29 @@
+{
+  "log_level": "all",
+  "fail_on": "warning",
+  "max_lines_per_file": {
+    "enabled": true,
+    "warning": 300,
+    "error": 500,
+    "exclude_patterns": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "coverage/**",
+      ".git/**",
+      "code_analysis_results/**"
+    ]
+  },
+  "pmd_duplicates": {
+    "enabled": true,
+    "minimum_tokens": 100,
+    "exclude_patterns": {
+      "javascript": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**"],
+      "typescript": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**"]
+    }
+  },
+  "tsc_analyze": {
+    "enabled": true,
+    "tsconfig": "./tsconfig.json"
+  }
+}
