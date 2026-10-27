@@ -1,0 +1,3 @@
+# Keep the root graph focused on the package's first-party source.
+/*
+!/src/
