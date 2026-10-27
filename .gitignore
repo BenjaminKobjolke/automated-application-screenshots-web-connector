@@ -9,3 +9,6 @@ code_analysis_results/
 .reasonix/
 coding-rules.json
 .claude/
+node_modules/
+dist/
+test-results/
